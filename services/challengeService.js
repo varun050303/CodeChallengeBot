@@ -1,9 +1,10 @@
 import OpenAI from "openai";
 
-const openAIAPIKEY = process.env.OPENAI_API_KEY;
+
+console.log(process.env.OPENAI_API_KEY)
 
 const openai = new OpenAI({
-  apiKey: openAIAPIKEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 export default async function generateChallenge(difficulty, language, type) {
