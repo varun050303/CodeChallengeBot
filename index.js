@@ -12,4 +12,5 @@ bot.use(session());
 
 startHandler(bot);
 callbackQuery(bot);
-bot.launch();
+
+bot.launch()
