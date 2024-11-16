@@ -43,6 +43,6 @@ export default function callbackQuery(bot) {
       `Here is your ${difficulty} ${language} question (${type}):\n\n${challenge}`, { parse_mode: 'Markdown', reply_markup: { removeKeyboard: true } }
     );
 
-    ctx.session = null
+    ctx.session.challenge = challenge
   });
 }
